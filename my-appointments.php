@@ -4,8 +4,8 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-require_once 'config/database.php';
-require_once 'includes/functions.php';
+require_once '../config/database.php';
+require_once '../includes/functions.php';
 
 requireRole('patient');
 
@@ -19,7 +19,7 @@ $patient = $stmt->fetch();
 
 if (!$patient) {
     $_SESSION['error'] = 'Patient record not found. Please contact the administrator.';
-    header('Location: dashboard.php');
+    header('Location: ../dashboard.php');
     exit();
 }
 
@@ -79,7 +79,7 @@ $stmt->execute([$patient_id]);
 $appointments = $stmt->fetchAll();
 
 $pageTitle = 'My Appointments';
-include 'includes/header.php';
+include '../includes/header.php';
 ?>
 
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
@@ -197,7 +197,7 @@ include 'includes/header.php';
                                         ?>
                                         
                                         <?php if ($hoursDifference >= 24): ?>
-                                            <form method="POST" onsubmit="return confirm('Are you sure you want to cancel this appointment?')">
+                                            <form method="POST" onsubmit="return confirmDelete('Are you sure you want to cancel this appointment?')">
                                                 <input type="hidden" name="action" value="cancel">
                                                 <input type="hidden" name="appointment_id" value="<?php echo $appointment['id']; ?>">
                                                 <button type="submit" class="btn btn-outline-danger btn-sm">
@@ -402,4 +402,4 @@ include 'includes/header.php';
     </div>
 </div>
 
-<?php include 'includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

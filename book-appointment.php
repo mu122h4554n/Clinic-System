@@ -4,8 +4,8 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-require_once 'config/database.php';
-require_once 'includes/functions.php';
+require_once '../config/database.php';
+require_once '../includes/functions.php';
 
 requireRole('patient');
 
@@ -19,7 +19,7 @@ $patient = $stmt->fetch();
 
 if (!$patient) {
     $_SESSION['error'] = 'Patient record not found. Please contact the administrator.';
-    header('Location: dashboard.php');
+    header('Location: ../dashboard.php');
     exit();
 }
 
@@ -124,7 +124,7 @@ $stmt = $db->query("
 $doctors = $stmt->fetchAll();
 
 $pageTitle = 'Book Appointment';
-include 'includes/header.php';
+include '../includes/header.php';
 ?>
 
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
@@ -201,7 +201,7 @@ include 'includes/header.php';
                     </div>
                     
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <a href="dashboard.php" class="btn btn-secondary me-md-2">Cancel</a>
+                        <a href="../dashboard.php" class="btn btn-secondary me-md-2">Cancel</a>
                         <button type="submit" class="btn btn-primary">
                             <i class="fas fa-calendar-check me-2"></i>Book Appointment
                         </button>
@@ -325,4 +325,4 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-<?php include 'includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>
